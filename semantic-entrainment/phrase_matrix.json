@@ -1,0 +1,99 @@
+[
+    {
+        "english": "Hello",
+        "mandarin": "你好"
+    },
+    {
+        "english": "Goodbye",
+        "mandarin": "再见"
+    },
+    {
+        "english": "Thanks",
+        "mandarin": "谢谢"
+    },
+    {
+        "english": "Friend",
+        "mandarin": "朋友"
+    },
+    {
+        "english": "Doctor",
+        "mandarin": "医生"
+    },
+    {
+        "english": "Help",
+        "mandarin": "帮忙"
+    },
+    {
+        "english": "Danger",
+        "mandarin": "危险"
+    },
+    {
+        "english": "Food",
+        "mandarin": "食物"
+    },
+    {
+        "english": "Water",
+        "mandarin": "水"
+    },
+    {
+        "english": "Money",
+        "mandarin": "钱"
+    },
+    {
+        "english": "Time",
+        "mandarin": "时间"
+    },
+    {
+        "english": "When",
+        "mandarin": "什么时候"
+    },
+    {
+        "english": "Where",
+        "synthesized": "在哪",
+        "mandarin": "在哪"
+    },
+    {
+        "english": "Why",
+        "mandarin": "为什么"
+    },
+    {
+        "english": "What",
+        "mandarin": "什么"
+    },
+    {
+        "english": "Who",
+        "mandarin": "谁"
+    },
+    {
+        "english": "You",
+        "mandarin": "你"
+    },
+    {
+        "english": "Me",
+        "mandarin": "我"
+    },
+    {
+        "english": "He",
+        "mandarin": "他"
+    },
+    {
+        "english": "She",
+        "mandarin": "她"
+    },
+    {
+        "english": "Understand",
+        "mandarin": "明白"
+    },
+    {
+        "english": "Forget",
+        "mandarin": "忘记"
+    },
+    {
+        "english": "Correct",
+        "mandarin": "对"
+    },
+    {
+        "english": "Incorrect",
+        "mandarin": "不对"
+    }
+]

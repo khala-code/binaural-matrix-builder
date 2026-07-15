@@ -33,7 +33,7 @@ class TurboMatrixVisualizer:
         self.fig, (self.ax1, self.ax2) = plt.subplots(1, 2, figsize=(12, 6), dpi=80, facecolor='#0B0C10')
         self.canvas = FigureCanvasAgg(self.fig)
         
-        self.fig.suptitle(f"Cytoskeletal Microtubule Matrix\nCenter: 234.37 | 256.25 | 263.67 Hz  •  Intercept: {beat_freq}Hz  •  Grid: {meter} @ {bpm} BPM", 
+        self.fig.suptitle(f"Cytoskeletal Microtubule Matrix\nCenter: 117 | 131 | 248 Hz  •  Intercept: {beat_freq}Hz  •  Grid: {meter} @ {bpm} BPM", 
                           color='#66FCF1', fontsize=12, fontweight='bold', y=0.96)
         
         # --- Initialize Static Infrastructure Once ---
@@ -93,7 +93,7 @@ class TurboMatrixVisualizer:
         return np.asarray(rgba)[..., :3]
 
 def compile_matrix_video(beat_freq, meter, bpm, click_gain, duration, fps, output_filename):
-    f_crystal = np.array([234.37, 256.25, 263.67])
+    f_crystal = np.array([117, 131, 248])
     offset = beat_freq / 2.0
     sample_rate = 44100
     

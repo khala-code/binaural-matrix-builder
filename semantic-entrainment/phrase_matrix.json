@@ -1,99 +1,122 @@
 [
     {
         "english": "Hello",
-        "mandarin": "你好"
+        "mandarin": "你好",
+        "pinyin": "Nǐ hǎo"
     },
     {
         "english": "Goodbye",
-        "mandarin": "再见"
+        "mandarin": "再见",
+        "pinyin": "Zàijiàn"
     },
     {
         "english": "Thanks",
-        "mandarin": "谢谢"
+        "mandarin": "谢谢",
+        "pinyin": "Xièxie"
     },
     {
         "english": "Friend",
-        "mandarin": "朋友"
+        "mandarin": "朋友",
+        "pinyin": "Péngyǒu"
     },
     {
         "english": "Doctor",
-        "mandarin": "医生"
+        "mandarin": "医生",
+        "pinyin": "Yīshēng"
     },
     {
         "english": "Help",
-        "mandarin": "帮忙"
+        "mandarin": "帮忙",
+        "pinyin": "Bāngmáng"
     },
     {
         "english": "Danger",
-        "mandarin": "危险"
+        "mandarin": "危险",
+        "pinyin": "Wēixiǎn"
     },
     {
         "english": "Food",
-        "mandarin": "食物"
+        "mandarin": "食物",
+        "pinyin": "Shíwù"
     },
     {
         "english": "Water",
-        "mandarin": "水"
+        "mandarin": "水",
+        "pinyin": "Shuǐ"
     },
     {
         "english": "Money",
-        "mandarin": "钱"
+        "mandarin": "钱",
+        "pinyin": "Qián"
     },
     {
         "english": "Time",
-        "mandarin": "时间"
+        "mandarin": "时间",
+        "pinyin": "Shíjiān"
     },
     {
         "english": "When",
-        "mandarin": "什么时候"
+        "mandarin": "什么时候",
+        "pinyin": "Shénme shíhou"
     },
     {
         "english": "Where",
-        "synthesized": "在哪",
-        "mandarin": "在哪"
+        "mandarin": "在哪",
+        "pinyin": "Zài nǎ"
     },
     {
         "english": "Why",
-        "mandarin": "为什么"
+        "mandarin": "为什么",
+        "pinyin": "Wèishénme"
     },
     {
         "english": "What",
-        "mandarin": "什么"
+        "mandarin": "什么",
+        "pinyin": "Shénme"
     },
     {
         "english": "Who",
-        "mandarin": "谁"
+        "mandarin": "谁",
+        "pinyin": "Shéi"
     },
     {
         "english": "You",
-        "mandarin": "你"
+        "mandarin": "你",
+        "pinyin": "Nǐ"
     },
     {
         "english": "Me",
-        "mandarin": "我"
+        "mandarin": "我",
+        "pinyin": "Wǒ"
     },
     {
         "english": "He",
-        "mandarin": "他"
+        "mandarin": "他",
+        "pinyin": "Tā"
     },
     {
         "english": "She",
-        "mandarin": "她"
+        "mandarin": "她",
+        "pinyin": "Tā"
     },
     {
         "english": "Understand",
-        "mandarin": "明白"
+        "mandarin": "明白",
+        "pinyin": "Míngbái"
     },
     {
         "english": "Forget",
-        "mandarin": "忘记"
+        "mandarin": "忘记",
+        "pinyin": "Wàngjì"
     },
     {
         "english": "Correct",
-        "mandarin": "对"
+        "mandarin": "对",
+        "pinyin": "Duì"
     },
     {
         "english": "Incorrect",
-        "mandarin": "不对"
+        "mandarin": "不对",
+        "pinyin": "Bú duì"
     }
 ]

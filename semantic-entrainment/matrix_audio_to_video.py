@@ -18,13 +18,15 @@ except ImportError:
         print("[ERROR] MoviePy environment reference could not be resolved.")
         sys.exit(1)
 
-def load_phrase_matrix(json_path="phrase_matrix.json"):
+def load_phrase_matrix(json_path="phrases.json"):
+    """Loads the centralized phrase dataset from JSON and converts it to list format."""
     if not os.path.exists(json_path):
         print(f"[ERROR] Central dataset file '{json_path}' not found.")
         sys.exit(1)
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    return [(item['english'], item['mandarin']) for item in data]
+    # Updated to return the triple-vector tuple
+    return [(item['english'], item['mandarin'], item['pinyin']) for item in data]
 
 class PreRenderedVisualizer:
     def __init__(self, t, left, right, click_track, sample_rate, beat_freq, matrix, bpm):
@@ -55,7 +57,7 @@ class PreRenderedVisualizer:
         ]
         plt.rcParams['axes.unicode_minus'] = False  # Prevents glyph corruption on negative axes
         plt.rcParams['font.size'] = 12
-        
+
         self.fig, (self.ax1, self.ax2) = plt.subplots(1, 2, figsize=(12, 6.75), dpi=80, facecolor='#0B0C10')
         self.canvas = FigureCanvasAgg(self.fig)
         
@@ -118,21 +120,21 @@ class PreRenderedVisualizer:
         t_measure = t_frame % measure_duration
         phrase_idx = current_measure % self.num_phrases
         
-        en_text, zh_text = self.matrix[phrase_idx]
+        en_text, zh_text, pinyin_text = self.matrix[phrase_idx]
         
         if 0.0 <= t_measure < 1.0:
             self.txt_display.set_text(f"ENG ANCHOR:  {en_text.upper()}")
             self.txt_display.set_visible(True)
-            self.txt_display.get_bbox_patch().set_edgecolor('#66FCF1')  # Fixed method call
+            self.txt_display.get_bbox_patch().set_edgecolor('#66FCF1')
             self.txt_display.set_color('#66FCF1')
         elif 1.0 <= t_measure < 2.0:
             self.txt_display.set_text(f"ENG ANCHOR:  {en_text.upper()}")
-            self.txt_display.get_bbox_patch().set_edgecolor('#45A29E')  # Fixed method call
+            self.txt_display.get_bbox_patch().set_edgecolor('#45A29E')
             self.txt_display.set_color('#45A29E')
             self.txt_display.set_visible(True)
         elif 2.0 <= t_measure < 3.0:
-            self.txt_display.set_text(f"TARGET MANIFEST:  {zh_text}")
-            self.txt_display.get_bbox_patch().set_edgecolor('#66FCF1')  # Fixed method call
+            self.txt_display.set_text(f"TARGET MANIFEST:  {zh_text} ({pinyin_text})")
+            self.txt_display.get_bbox_patch().set_edgecolor('#66FCF1')
             self.txt_display.set_color('#66FCF1')
             self.txt_display.set_visible(True)
         else:
